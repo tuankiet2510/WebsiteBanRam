@@ -1,0 +1,1835 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metadata-complete="true" version="3.1" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+      
+    <context-param>
+            
+        <param-name>org.eclipse.jetty.containerInitializers</param-name>
+            
+        <param-value>
+            <![CDATA[
+    "ContainerInitializer{org.eclipse.jetty.apache.jsp.JettyJasperInitializer,interested=[],applicable=[],annotated=[]}"]]>
+        </param-value>
+          
+    </context-param>
+      
+    <context-param>
+            
+        <param-name>org.eclipse.jetty.tlds</param-name>
+            
+        <param-value>
+            <![CDATA[
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/fn.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/sql-1_0.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/c.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/scriptfree.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/permittedTaglibs.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/x-1_0.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/fmt.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/x-1_0-rt.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/sql-1_0-rt.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/fmt-1_0-rt.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/x-1_0-rt.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/c-1_0.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/fn.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/fmt.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/x.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/scriptfree.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/permittedTaglibs.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/fmt-1_0-rt.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/fmt-1_0.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/sql-1_0-rt.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/sql.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/sql.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/c-1_0-rt.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/c-1_1.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/x.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/c-1_0-rt.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/c.tld"]]>
+        </param-value>
+          
+    </context-param>
+      
+    <context-param>
+            
+        <param-name>org.eclipse.jetty.resources</param-name>
+            
+        <param-value/>
+          
+    </context-param>
+      
+    <context-param>
+            
+        <param-name>org.eclipse.jetty.originAttribute</param-name>
+            
+        <param-value>origin</param-value>
+          
+    </context-param>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.Top5NhanVien_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):0">org.apache.jsp.Top5NhanVien_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.DetailProduct_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):1">org.apache.jsp.DetailProduct_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.HoaDon_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):2">org.apache.jsp.HoaDon_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.QuanLySanPham_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):3">org.apache.jsp.QuanLySanPham_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.EditProfile_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):4">org.apache.jsp.EditProfile_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.DoanhThuTheoThu_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):5">org.apache.jsp.DoanhThuTheoThu_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.QuanLyTaiKhoan_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):6">org.apache.jsp.QuanLyTaiKhoan_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.Statistic_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):7">org.apache.jsp.Statistic_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.Home_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):8">org.apache.jsp.Home_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.forgot_002dpassword_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):9">org.apache.jsp.forgot_002dpassword_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.Top10SanPhamBanChay_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):10">org.apache.jsp.Top10SanPhamBanChay_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.Menu_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):11">org.apache.jsp.Menu_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.Shop_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):12">org.apache.jsp.Shop_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.Edit_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):13">org.apache.jsp.Edit_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.DatHang_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):14">org.apache.jsp.DatHang_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.Footer_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):15">org.apache.jsp.Footer_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.Left_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):16">org.apache.jsp.Left_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.Login_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):17">org.apache.jsp.Login_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.DoanhThuTheoThang_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):18">org.apache.jsp.DoanhThuTheoThang_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.Top5KhachHang_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):19">org.apache.jsp.Top5KhachHang_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.Cart_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):20">org.apache.jsp.Cart_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.ThongTinDatHang_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):21">org.apache.jsp.ThongTinDatHang_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.LeftAdmin_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):22">org.apache.jsp.LeftAdmin_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.NhaPhanPhoi_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):23">org.apache.jsp.NhaPhanPhoi_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>HoaDonControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.HoaDonControl):24">control.HoaDonControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.HoaDonControl):25">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>AddCartControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.AddCartControl):26">control.AddCartControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.AddCartControl):27">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>AddControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.AddControl):28">control.AddControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.AddControl):29">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>LogOutControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.LogOutControl):30">control.LogOutControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.LogOutControl):31">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>AddReviewControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.AddReviewControl):32">control.AddReviewControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.AddReviewControl):33">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>SubAmountCartControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.SubAmountCartControl):34">control.SubAmountCartControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.SubAmountCartControl):35">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>LoadMoreKingmaxControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.LoadMoreKingmaxControl):36">control.LoadMoreKingmaxControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.LoadMoreKingmaxControl):37">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>SearchAjaxPriceMinToMaxShopControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.SearchAjaxPriceMinToMaxShopControl):38">control.SearchAjaxPriceMinToMaxShopControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.SearchAjaxPriceMinToMaxShopControl):39">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>ManagerSupplierControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.ManagerSupplierControl):40">control.ManagerSupplierControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.ManagerSupplierControl):41">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>SearchByAjaxHoaDon</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.SearchByAjaxHoaDon):42">control.SearchByAjaxHoaDon</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.SearchByAjaxHoaDon):43">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>LoadMoreControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.LoadMoreControl):44">control.LoadMoreControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.LoadMoreControl):45">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>Top10SanPhamControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.Top10SanPhamControl):46">control.Top10SanPhamControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.Top10SanPhamControl):47">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>CategoryControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.CategoryControl):48">control.CategoryControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.CategoryControl):49">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>StatisticControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.StatisticControl):50">control.StatisticControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.StatisticControl):51">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>OrderControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.OrderControl):52">control.OrderControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.OrderControl):53">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>LoginControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.LoginControl):54">control.LoginControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.LoginControl):55">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>EditProfileControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.EditProfileControl):56">control.EditProfileControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.EditProfileControl):57">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>ManagerCartControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.ManagerCartControl):58">control.ManagerCartControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.ManagerCartControl):59">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>DoanhThuTheoThangControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.DoanhThuTheoThangControl):60">control.DoanhThuTheoThangControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.DoanhThuTheoThangControl):61">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>SignUpControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.SignUpControl):62">control.SignUpControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.SignUpControl):63">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>DeleteAccountControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.DeleteAccountControl):64">control.DeleteAccountControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.DeleteAccountControl):65">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>LoadAmountCartControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.LoadAmountCartControl):66">control.LoadAmountCartControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.LoadAmountCartControl):67">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>EditControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.EditControl):68">control.EditControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.EditControl):69">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>Top5KhachHangControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.Top5KhachHangControl):70">control.Top5KhachHangControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.Top5KhachHangControl):71">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>ManagerAccountControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.ManagerAccountControl):72">control.ManagerAccountControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.ManagerAccountControl):73">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>HomeControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.HomeControl):74">control.HomeControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.HomeControl):75">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>SearchAjaxPriceAbove200ShopControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.SearchAjaxPriceAbove200ShopControl):76">control.SearchAjaxPriceAbove200ShopControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.SearchAjaxPriceAbove200ShopControl):77">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>SearchAjaxCapacity16GBControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.SearchAjaxCapacity16GBControl):78">control.SearchAjaxCapacity16GBControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.SearchAjaxCapacity16GBControl):79">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>SearchControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.SearchControl):80">control.SearchControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.SearchControl):81">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>DetailControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.DetailControl):82">control.DetailControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.DetailControl):83">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>SearchAjaxCapacity2GBControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.SearchAjaxCapacity2GBControl):84">control.SearchAjaxCapacity2GBControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.SearchAjaxCapacity2GBControl):85">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>ShopControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.ShopControl):86">control.ShopControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.ShopControl):87">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>DeleteControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.DeleteControl):88">control.DeleteControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.DeleteControl):89">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>SearchByAjax</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.SearchByAjax):90">control.SearchByAjax</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.SearchByAjax):91">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>DoanhThuTheoThuControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.DoanhThuTheoThuControl):92">control.DoanhThuTheoThuControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.DoanhThuTheoThuControl):93">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>TotalMoneyCartControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.TotalMoneyCartControl):94">control.TotalMoneyCartControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.TotalMoneyCartControl):95">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>SearchByAjaxShop</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.SearchByAjaxShop):96">control.SearchByAjaxShop</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.SearchByAjaxShop):97">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>SearchAjaxPrice100To200ShopControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.SearchAjaxPrice100To200ShopControl):98">control.SearchAjaxPrice100To200ShopControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.SearchAjaxPrice100To200ShopControl):99">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>Top5NhanVienControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.Top5NhanVienControl):100">control.Top5NhanVienControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.Top5NhanVienControl):101">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>ManagerControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.ManagerControl):102">control.ManagerControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.ManagerControl):103">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>AddAmountCartControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.AddAmountCartControl):104">control.AddAmountCartControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.AddAmountCartControl):105">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>SearchAjaxCapacity4GBControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.SearchAjaxCapacity4GBControl):106">control.SearchAjaxCapacity4GBControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.SearchAjaxCapacity4GBControl):107">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>AddAccountControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.AddAccountControl):108">control.AddAccountControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.AddAccountControl):109">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>SellCartControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.SellCartControl):110">control.SellCartControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.SellCartControl):111">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>CategoryShopControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.CategoryShopControl):112">control.CategoryShopControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.CategoryShopControl):113">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>XuatExcelControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.XuatExcelControl):114">control.XuatExcelControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.XuatExcelControl):115">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>ForgotPasswordControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.ForgotPasswordControl):116">control.ForgotPasswordControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.ForgotPasswordControl):117">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>SearchAjaxCapacity32GBControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.SearchAjaxCapacity32GBControl):118">control.SearchAjaxCapacity32GBControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.SearchAjaxCapacity32GBControl):119">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>LoadControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.LoadControl):120">control.LoadControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.LoadControl):121">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>DeleteSupplierControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.DeleteSupplierControl):122">control.DeleteSupplierControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.DeleteSupplierControl):123">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>DeleteCartControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.DeleteCartControl):124">control.DeleteCartControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.DeleteCartControl):125">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>LoadMoreKingstonControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.LoadMoreKingstonControl):126">control.LoadMoreKingstonControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.LoadMoreKingstonControl):127">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>AddSupplierControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.AddSupplierControl):128">control.AddSupplierControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.AddSupplierControl):129">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>SearchAjaxCapacity8GBControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.SearchAjaxCapacity8GBControl):130">control.SearchAjaxCapacity8GBControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.SearchAjaxCapacity8GBControl):131">false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>SearchAjaxPriceUnder100ShopControl</servlet-name>
+            
+        <servlet-class origin="@WebServlet(control.SearchAjaxPriceUnder100ShopControl):132">control.SearchAjaxPriceUnder100ShopControl</servlet-class>
+            
+        <async-supported origin="@WebServlet(control.SearchAjaxPriceUnder100ShopControl):133">false</async-supported>
+          
+    </servlet>
+      
+    <servlet-mapping origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):134">
+            
+        <servlet-name>org.apache.jsp.Top5NhanVien_jsp</servlet-name>
+            
+        <url-pattern>/Top5NhanVien.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):135">
+            
+        <servlet-name>org.apache.jsp.DetailProduct_jsp</servlet-name>
+            
+        <url-pattern>/DetailProduct.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):136">
+            
+        <servlet-name>org.apache.jsp.HoaDon_jsp</servlet-name>
+            
+        <url-pattern>/HoaDon.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):137">
+            
+        <servlet-name>org.apache.jsp.QuanLySanPham_jsp</servlet-name>
+            
+        <url-pattern>/QuanLySanPham.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):138">
+            
+        <servlet-name>org.apache.jsp.EditProfile_jsp</servlet-name>
+            
+        <url-pattern>/EditProfile.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):139">
+            
+        <servlet-name>org.apache.jsp.DoanhThuTheoThu_jsp</servlet-name>
+            
+        <url-pattern>/DoanhThuTheoThu.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):140">
+            
+        <servlet-name>org.apache.jsp.QuanLyTaiKhoan_jsp</servlet-name>
+            
+        <url-pattern>/QuanLyTaiKhoan.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):141">
+            
+        <servlet-name>org.apache.jsp.Statistic_jsp</servlet-name>
+            
+        <url-pattern>/Statistic.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):142">
+            
+        <servlet-name>org.apache.jsp.Home_jsp</servlet-name>
+            
+        <url-pattern>/Home.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):143">
+            
+        <servlet-name>org.apache.jsp.forgot_002dpassword_jsp</servlet-name>
+            
+        <url-pattern>/forgot-password.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):144">
+            
+        <servlet-name>org.apache.jsp.Top10SanPhamBanChay_jsp</servlet-name>
+            
+        <url-pattern>/Top10SanPhamBanChay.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):145">
+            
+        <servlet-name>org.apache.jsp.Menu_jsp</servlet-name>
+            
+        <url-pattern>/Menu.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):146">
+            
+        <servlet-name>org.apache.jsp.Shop_jsp</servlet-name>
+            
+        <url-pattern>/Shop.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):147">
+            
+        <servlet-name>org.apache.jsp.Edit_jsp</servlet-name>
+            
+        <url-pattern>/Edit.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):148">
+            
+        <servlet-name>org.apache.jsp.DatHang_jsp</servlet-name>
+            
+        <url-pattern>/DatHang.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):149">
+            
+        <servlet-name>org.apache.jsp.Footer_jsp</servlet-name>
+            
+        <url-pattern>/Footer.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):150">
+            
+        <servlet-name>org.apache.jsp.Left_jsp</servlet-name>
+            
+        <url-pattern>/Left.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):151">
+            
+        <servlet-name>org.apache.jsp.Login_jsp</servlet-name>
+            
+        <url-pattern>/Login.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):152">
+            
+        <servlet-name>org.apache.jsp.DoanhThuTheoThang_jsp</servlet-name>
+            
+        <url-pattern>/DoanhThuTheoThang.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):153">
+            
+        <servlet-name>org.apache.jsp.Top5KhachHang_jsp</servlet-name>
+            
+        <url-pattern>/Top5KhachHang.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):154">
+            
+        <servlet-name>org.apache.jsp.Cart_jsp</servlet-name>
+            
+        <url-pattern>/Cart.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):155">
+            
+        <servlet-name>org.apache.jsp.ThongTinDatHang_jsp</servlet-name>
+            
+        <url-pattern>/ThongTinDatHang.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):156">
+            
+        <servlet-name>org.apache.jsp.LeftAdmin_jsp</servlet-name>
+            
+        <url-pattern>/LeftAdmin.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///home/kiet81358/WebBanRam/target/appengine-staging/WEB-INF/web.xml):157">
+            
+        <servlet-name>org.apache.jsp.NhaPhanPhoi_jsp</servlet-name>
+            
+        <url-pattern>/NhaPhanPhoi.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>HoaDonControl</servlet-name>
+            
+        <url-pattern>/hoaDon</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>AddCartControl</servlet-name>
+            
+        <url-pattern>/addCart</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>AddControl</servlet-name>
+            
+        <url-pattern>/add</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>LogOutControl</servlet-name>
+            
+        <url-pattern>/logout</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>AddReviewControl</servlet-name>
+            
+        <url-pattern>/addReview</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>SubAmountCartControl</servlet-name>
+            
+        <url-pattern>/subAmountCart</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>LoadMoreKingmaxControl</servlet-name>
+            
+        <url-pattern>/loadKingmax</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>SearchAjaxPriceMinToMaxShopControl</servlet-name>
+            
+        <url-pattern>/searchAjaxPriceMinToMax</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>ManagerSupplierControl</servlet-name>
+            
+        <url-pattern>/managerSupplier</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>SearchByAjaxHoaDon</servlet-name>
+            
+        <url-pattern>/searchAjaxHoaDon</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>LoadMoreControl</servlet-name>
+            
+        <url-pattern>/load</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>Top10SanPhamControl</servlet-name>
+            
+        <url-pattern>/top10</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>CategoryControl</servlet-name>
+            
+        <url-pattern>/category</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>StatisticControl</servlet-name>
+            
+        <url-pattern>/admin</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>OrderControl</servlet-name>
+            
+        <url-pattern>/order</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>LoginControl</servlet-name>
+            
+        <url-pattern>/login</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>EditProfileControl</servlet-name>
+            
+        <url-pattern>/editProfile</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>ManagerCartControl</servlet-name>
+            
+        <url-pattern>/managerCart</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>DoanhThuTheoThangControl</servlet-name>
+            
+        <url-pattern>/doanhThuTheoThang</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>SignUpControl</servlet-name>
+            
+        <url-pattern>/signup</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>DeleteAccountControl</servlet-name>
+            
+        <url-pattern>/deleteAccount</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>LoadAmountCartControl</servlet-name>
+            
+        <url-pattern>/loadAllAmountCart</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>EditControl</servlet-name>
+            
+        <url-pattern>/edit</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>Top5KhachHangControl</servlet-name>
+            
+        <url-pattern>/top5khachhang</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>ManagerAccountControl</servlet-name>
+            
+        <url-pattern>/managerAccount</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>HomeControl</servlet-name>
+            
+        <url-pattern>/home</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>SearchAjaxPriceAbove200ShopControl</servlet-name>
+            
+        <url-pattern>/searchAjaxPriceAbove200Shop</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>SearchAjaxCapacity16GBControl</servlet-name>
+            
+        <url-pattern>/searchAjaxCapacity16GB</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>SearchControl</servlet-name>
+            
+        <url-pattern>/search</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>DetailControl</servlet-name>
+            
+        <url-pattern>/detail</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>SearchAjaxCapacity2GBControl</servlet-name>
+            
+        <url-pattern>/searchAjaxCapacity2GB</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>ShopControl</servlet-name>
+            
+        <url-pattern>/shop</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>DeleteControl</servlet-name>
+            
+        <url-pattern>/delete</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>SearchByAjax</servlet-name>
+            
+        <url-pattern>/searchAjax</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>DoanhThuTheoThuControl</servlet-name>
+            
+        <url-pattern>/doanhThuTheoThu</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>TotalMoneyCartControl</servlet-name>
+            
+        <url-pattern>/totalMoneyCart</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>SearchByAjaxShop</servlet-name>
+            
+        <url-pattern>/searchAjaxShop</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>SearchAjaxPrice100To200ShopControl</servlet-name>
+            
+        <url-pattern>/searchAjaxPrice100To200Shop</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>Top5NhanVienControl</servlet-name>
+            
+        <url-pattern>/top5nhanvien</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>ManagerControl</servlet-name>
+            
+        <url-pattern>/manager</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>AddAmountCartControl</servlet-name>
+            
+        <url-pattern>/addAmountCart</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>SearchAjaxCapacity4GBControl</servlet-name>
+            
+        <url-pattern>/searchAjaxCapacity4GB</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>AddAccountControl</servlet-name>
+            
+        <url-pattern>/addAccount</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>SellCartControl</servlet-name>
+            
+        <url-pattern>/sellCart</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>CategoryShopControl</servlet-name>
+            
+        <url-pattern>/categoryShop</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>XuatExcelControl</servlet-name>
+            
+        <url-pattern>/xuatExcelControl</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>ForgotPasswordControl</servlet-name>
+            
+        <url-pattern>/forgotPassword</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>SearchAjaxCapacity32GBControl</servlet-name>
+            
+        <url-pattern>/searchAjaxCapacity32GB</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>LoadControl</servlet-name>
+            
+        <url-pattern>/loadProduct</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>DeleteSupplierControl</servlet-name>
+            
+        <url-pattern>/deleteSupplier</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>DeleteCartControl</servlet-name>
+            
+        <url-pattern>/deleteCart</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>LoadMoreKingstonControl</servlet-name>
+            
+        <url-pattern>/loadKingston</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>AddSupplierControl</servlet-name>
+            
+        <url-pattern>/addSupplier</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>SearchAjaxCapacity8GBControl</servlet-name>
+            
+        <url-pattern>/searchAjaxCapacity8GB</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping>
+            
+        <servlet-name>SearchAjaxPriceUnder100ShopControl</servlet-name>
+            
+        <url-pattern>/searchAjaxPriceUnder100Shop</url-pattern>
+          
+    </servlet-mapping>
+      
+  
+  
+    <welcome-file-list>
+    
+    
+  </welcome-file-list>
+      
+    <locale-encoding-mapping-list>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):160">
+                  
+            <locale>de</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):161">
+                  
+            <locale>no</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):162">
+                  
+            <locale>be</locale>
+                  
+            <encoding>ISO-8859-5</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):163">
+                  
+            <locale>fi</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):164">
+                  
+            <locale>ru</locale>
+                  
+            <encoding>ISO-8859-5</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):165">
+                  
+            <locale>pt</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):166">
+                  
+            <locale>bg</locale>
+                  
+            <encoding>ISO-8859-5</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):167">
+                  
+            <locale>lt</locale>
+                  
+            <encoding>ISO-8859-2</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):168">
+                  
+            <locale>hr</locale>
+                  
+            <encoding>ISO-8859-2</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):169">
+                  
+            <locale>lv</locale>
+                  
+            <encoding>ISO-8859-2</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):170">
+                  
+            <locale>fr</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):171">
+                  
+            <locale>hu</locale>
+                  
+            <encoding>ISO-8859-2</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):172">
+                  
+            <locale>zh_TW</locale>
+                  
+            <encoding>Big5</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):173">
+                  
+            <locale>sh</locale>
+                  
+            <encoding>ISO-8859-5</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):174">
+                  
+            <locale>uk</locale>
+                  
+            <encoding>ISO-8859-5</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):175">
+                  
+            <locale>sk</locale>
+                  
+            <encoding>ISO-8859-2</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):176">
+                  
+            <locale>sl</locale>
+                  
+            <encoding>ISO-8859-2</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):177">
+                  
+            <locale>ca</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):178">
+                  
+            <locale>mk</locale>
+                  
+            <encoding>ISO-8859-5</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):179">
+                  
+            <locale>sq</locale>
+                  
+            <encoding>ISO-8859-2</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):180">
+                  
+            <locale>sr</locale>
+                  
+            <encoding>ISO-8859-5</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):181">
+                  
+            <locale>sv</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):182">
+                  
+            <locale>ko</locale>
+                  
+            <encoding>EUC-KR</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):183">
+                  
+            <locale>el</locale>
+                  
+            <encoding>ISO-8859-7</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):184">
+                  
+            <locale>en</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):185">
+                  
+            <locale>is</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):186">
+                  
+            <locale>it</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):187">
+                  
+            <locale>es</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):188">
+                  
+            <locale>iw</locale>
+                  
+            <encoding>ISO-8859-8</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):189">
+                  
+            <locale>zh</locale>
+                  
+            <encoding>GB2312</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):190">
+                  
+            <locale>et</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):191">
+                  
+            <locale>cs</locale>
+                  
+            <encoding>ISO-8859-2</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):192">
+                  
+            <locale>ar</locale>
+                  
+            <encoding>ISO-8859-6</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):193">
+                  
+            <locale>ja</locale>
+                  
+            <encoding>Shift_JIS</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):194">
+                  
+            <locale>pl</locale>
+                  
+            <encoding>ISO-8859-2</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):195">
+                  
+            <locale>da</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):196">
+                  
+            <locale>ro</locale>
+                  
+            <encoding>ISO-8859-2</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):197">
+                  
+            <locale>nl</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///home/kiet81358/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):198">
+                  
+            <locale>tr</locale>
+                  
+            <encoding>ISO-8859-9</encoding>
+                
+        </locale-encoding-mapping>
+          
+    </locale-encoding-mapping-list>
+      
+    <session-config>
+            
+        <session-timeout>1440</session-timeout>
+            
+        <cookie-config>
+                  
+            <name>JSESSIONID</name>
+                  
+            <http-only>false</http-only>
+                  
+            <secure>false</secure>
+                  
+            <max-age>-1</max-age>
+                
+        </cookie-config>
+            
+        <tracking-mode>URL</tracking-mode>
+            
+        <tracking-mode>COOKIE</tracking-mode>
+          
+    </session-config>
+    
+</web-app>

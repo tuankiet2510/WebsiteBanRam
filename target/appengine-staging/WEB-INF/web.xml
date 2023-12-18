@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"><!-- JSPC servlet mappings start -->
+
+    <servlet>
+        <servlet-name>org.apache.jsp.Top5NhanVien_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.Top5NhanVien_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.DetailProduct_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.DetailProduct_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.HoaDon_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.HoaDon_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.QuanLySanPham_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.QuanLySanPham_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.EditProfile_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.EditProfile_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.DoanhThuTheoThu_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.DoanhThuTheoThu_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.QuanLyTaiKhoan_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.QuanLyTaiKhoan_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.Statistic_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.Statistic_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.Home_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.Home_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.forgot_002dpassword_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.forgot_002dpassword_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.Top10SanPhamBanChay_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.Top10SanPhamBanChay_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.Menu_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.Menu_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.Shop_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.Shop_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.Edit_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.Edit_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.DatHang_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.DatHang_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.Footer_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.Footer_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.Left_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.Left_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.Login_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.Login_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.DoanhThuTheoThang_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.DoanhThuTheoThang_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.Top5KhachHang_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.Top5KhachHang_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.Cart_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.Cart_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.ThongTinDatHang_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.ThongTinDatHang_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.LeftAdmin_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.LeftAdmin_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.NhaPhanPhoi_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.NhaPhanPhoi_jsp</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.Top5NhanVien_jsp</servlet-name>
+        <url-pattern>/Top5NhanVien.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.DetailProduct_jsp</servlet-name>
+        <url-pattern>/DetailProduct.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.HoaDon_jsp</servlet-name>
+        <url-pattern>/HoaDon.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.QuanLySanPham_jsp</servlet-name>
+        <url-pattern>/QuanLySanPham.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.EditProfile_jsp</servlet-name>
+        <url-pattern>/EditProfile.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.DoanhThuTheoThu_jsp</servlet-name>
+        <url-pattern>/DoanhThuTheoThu.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.QuanLyTaiKhoan_jsp</servlet-name>
+        <url-pattern>/QuanLyTaiKhoan.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.Statistic_jsp</servlet-name>
+        <url-pattern>/Statistic.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.Home_jsp</servlet-name>
+        <url-pattern>/Home.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.forgot_002dpassword_jsp</servlet-name>
+        <url-pattern>/forgot-password.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.Top10SanPhamBanChay_jsp</servlet-name>
+        <url-pattern>/Top10SanPhamBanChay.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.Menu_jsp</servlet-name>
+        <url-pattern>/Menu.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.Shop_jsp</servlet-name>
+        <url-pattern>/Shop.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.Edit_jsp</servlet-name>
+        <url-pattern>/Edit.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.DatHang_jsp</servlet-name>
+        <url-pattern>/DatHang.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.Footer_jsp</servlet-name>
+        <url-pattern>/Footer.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.Left_jsp</servlet-name>
+        <url-pattern>/Left.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.Login_jsp</servlet-name>
+        <url-pattern>/Login.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.DoanhThuTheoThang_jsp</servlet-name>
+        <url-pattern>/DoanhThuTheoThang.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.Top5KhachHang_jsp</servlet-name>
+        <url-pattern>/Top5KhachHang.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.Cart_jsp</servlet-name>
+        <url-pattern>/Cart.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.ThongTinDatHang_jsp</servlet-name>
+        <url-pattern>/ThongTinDatHang.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.LeftAdmin_jsp</servlet-name>
+        <url-pattern>/LeftAdmin.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.NhaPhanPhoi_jsp</servlet-name>
+        <url-pattern>/NhaPhanPhoi.jsp</url-pattern>
+    </servlet-mapping>
+
+<!-- JSPC servlet mappings end -->
+
+</web-app>
